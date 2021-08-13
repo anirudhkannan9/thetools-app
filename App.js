@@ -1,21 +1,57 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { Text } from 'react-native';
+import styled from 'styled-components'
+import * as Font from 'expo-font'
+import AppLoading from 'expo-app-loading'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+//fetch the font
+const fetchFont = () => {
+  return Font.loadAsync({
+    'Poppins-Bold': require('./assets/fonts/Poppins/Poppins-Bold.ttf')
+  })
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const App = () => {
+  const [ fontLoaded, setFontLoaded ] = useState(false)
+
+  if (!fontLoaded) {
+    return (
+      <AppLoading 
+        startAsync={fetchFont}
+        onFinish={() => setFontLoaded(true)}
+        onError={() => console.error('ERROR')}
+      />
+    )
+  }
+
+  return (
+    <Container>
+      <TitleOne>
+        The
+      </TitleOne>
+      <TitleTwo>
+        Tools
+      </TitleTwo>
+    </Container>
+  )
+}
+
+export default App
+
+const Container = styled.View`
+  flex: 1;
+  background-color: #ffea7c;
+`
+const TitleOne = styled.Text`
+  font-size: 30px;
+  font-family: Poppins-Bold;
+  margin-left: 93px;
+  margin-top: 163px;
+`
+
+const TitleTwo = styled.Text`
+  font-size: 72px;
+  font-family: Poppins-Bold;
+  margin-left: 93px;
+  margin-top: -25px
+`
