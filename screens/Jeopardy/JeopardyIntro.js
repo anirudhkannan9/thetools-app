@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const JeopardyIntro = (proos) => {
+const JeopardyIntro = (props) => {
     return (
         <Container>
             <Text>

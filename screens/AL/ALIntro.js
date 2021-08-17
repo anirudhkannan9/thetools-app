@@ -1,23 +1,128 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Dimensions } from 'react-native'
+import BackButton from '../../components/BackButton'
+import { SmallEncircledOne, SmallEncircledTwo, SmallEncircledThree } from '../../components/Icons'
+import UseThisToolButton from '../../components/UseThisToolButton'
 
-const ALIntro = (proos) => {
+const { width: screenWidth, height: screenHeight } = Dimensions.get('window')
+
+const ALIntro = (props) => {
+    const navigation = props.navigation 
+
     return (
         <Container>
-            <Text>
-                Active Love
-            </Text>
+            <BackButton navigation={navigation} />
+            <MottoContainer>
+                <MottoText>
+                    Escape the Maze of endless resentment with...
+                </MottoText>
+            </MottoContainer>
+            <ALContainer>
+                <ALText>
+                    Active Love
+                </ALText>
+            </ALContainer>
+            <Step1Container>
+                <SmallEncircledOne />
+                <StepText>
+                    Concentration
+                </StepText>
+            </Step1Container>
+            <Step2Container>
+                <SmallEncircledTwo />
+                <StepText>
+                    Transmission
+                </StepText>
+
+            </Step2Container>
+            <Step3Container>
+                <SmallEncircledThree />
+                <StepText>
+                    Penetration
+                </StepText>
+            </Step3Container>
+            <UseThisToolButton 
+                navigation={navigation}
+                target={"AL1"}
+                prompt={"Next"}
+            />
+
         </Container>
     )
 }
 
 export default ALIntro
 
-const Container = styled.View`
-    flex: 1;
+const leftAlignMostElements = screenWidth*(46/375);
+
+const Step3Container = styled.View`
+    background-color: #ffea7c;
+    width: ${(240/375)*screenWidth}px;
+    height: ${(42/812)*screenHeight}px;
+    left: ${leftAlignMostElements}px;
+    top: ${(305/812)*screenHeight}px;
     align-items: center;
-    justify-content: center;
+    flex-direction: row;
 `
 
-const Text = styled.Text``
+const Step2Container = styled.View`
+    background-color: #ffea7c;
+    width: ${(240/375)*screenWidth}px;
+    height: ${(42/812)*screenHeight}px;
+    left: ${leftAlignMostElements}px;
+    top: ${(245/812)*screenHeight}px;
+    align-items: center;
+    flex-direction: row;;
+`
+
+const StepText = styled.Text`
+    font-family: Poppins-SemiBoldItalic;
+    font-size: ${(24/812)*screenHeight}px;
+    padding-left: 15px
+`
+
+const Step1Container = styled.View`
+    background-color: #ffea7c;
+    width: ${(240/375)*screenWidth}px;
+    height: ${(42/812)*screenHeight}px;
+    left: ${leftAlignMostElements}px;
+    top: ${(185/812)*screenHeight}px;
+    align-items: center;
+    flex-direction: row;
+`
+
+const ALText = styled.Text`
+    font-family: Poppins-ExtraBold;
+    font-size: ${(48/812)*screenHeight}px;
+`
+
+const ALContainer = styled.View`
+    background-color: #ffea7c;
+    width: ${(286/375)*screenWidth}px;
+    height: ${(61/812)*screenHeight}px;
+    left: ${leftAlignMostElements}px;
+    top: ${(137/812)*screenHeight}px;
+`
+
+const MottoText = styled.Text`
+    font-family: Poppins-SemiBoldItalic;
+    font-size: ${(18/812)*screenHeight}px;
+`
+
+const MottoContainer = styled.View`
+    background-color: #ffea7c;
+    width: ${screenWidth/(375/330)}px;
+    height: ${screenHeight/(812/27)}px;
+    left: ${screenWidth*(20/375)}px;
+    top: ${(90/812)*screenHeight}px;
+    align-items: center;
+    flex: 0.1
+`
+
+const Container = styled.View`
+    flex: 1;
+    background-color: #ffea7c;
+`
+
 

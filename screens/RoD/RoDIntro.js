@@ -12,9 +12,6 @@ const roHeight = 0.5*(132/812)*screenHeight
 
 const RoDIntro = (props) => {
     const navigation = props.navigation
-    console.log('in RoD, height: ', screenHeight)
-    console.log('in RoD, roTop: ', roTop)
-    console.log('in RoD, roHeight: ', roHeight)
 
     return (
         <Container>
@@ -66,6 +63,7 @@ const RoDIntro = (props) => {
             <UseThisToolButton 
                 navigation={navigation}
                 target={"RoD1"}
+                prompt={"Use This Tool"}
             />
         </Container>
     )

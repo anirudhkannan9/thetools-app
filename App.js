@@ -12,7 +12,9 @@ import CuesHome from './screens/CuesHome'
 import RoDIntro from './screens/RoD/RoDIntro'
 import RoD1 from './screens/RoD/RoD1'
 import ALIntro from './screens/AL/ALIntro'
+import AL1 from './screens/AL/AL1'
 import IAIntro from './screens/IA/IAIntro'
+import IA1 from './screens/IA/IA1'
 import GFIntro from './screens/GF/GFIntro'
 import JeopardyIntro from './screens/Jeopardy/JeopardyIntro'
 
@@ -34,6 +36,12 @@ const Stack = createNativeStackNavigator()
 const App = () => {
   const [ fontLoaded, setFontLoaded ] = useState(false)
 
+  if (Platform.OS === 'ios') {
+    console.log('in App.js, we are in an iPhone')
+  } else {
+    console.log('in App.js, we are in an Android')
+  }
+
   if (!fontLoaded) {
     return (
       <AppLoading 
@@ -43,9 +51,7 @@ const App = () => {
       />
     )
   }
-
-  if (Platform.OS === 'ios') {
-    console.log('in App.js; we are in iPhone')
+  
     return (
       <NavigationContainer>
         <Stack.Navigator
@@ -59,38 +65,15 @@ const App = () => {
           <Stack.Screen name="RoDIntro" component={RoDIntro} />
           <Stack.Screen name="RoD1" component={RoD1} />
           <Stack.Screen name="ALIntro" component={ALIntro} />
+          <Stack.Screen name="AL1" component={AL1} />
           <Stack.Screen name="IAIntro" component={IAIntro} />
+          <Stack.Screen name="IA1" component={IA1} />
           <Stack.Screen name="GFIntro" component={GFIntro} />
           <Stack.Screen name="JeopardyIntro" component={JeopardyIntro} />
   
         </Stack.Navigator>
       </NavigationContainer>
     )
-  } else {
-    console.log('in App.js; we are in Android')
-    return (
-      <SafeAreaView>
-        <NavigationContainer>
-          <Stack.Navigator
-            screenOptions={{
-              headerShown: false
-            }}
-          >
-    
-            <Stack.Screen name="Home" component={HomeScreen} />
-            <Stack.Screen name="Cues" component={CuesHome}/>
-            <Stack.Screen name="RoDIntro" component={RoDIntro} />
-            <Stack.Screen name="RoD1" component={RoD1} />
-            <Stack.Screen name="ALIntro" component={ALIntro} />
-            <Stack.Screen name="IAIntro" component={IAIntro} />
-            <Stack.Screen name="GFIntro" component={GFIntro} />
-            <Stack.Screen name="JeopardyIntro" component={JeopardyIntro} />
-    
-          </Stack.Navigator>
-        </NavigationContainer>
-      </SafeAreaView>
-    )
-  }
 }
 
 export default App

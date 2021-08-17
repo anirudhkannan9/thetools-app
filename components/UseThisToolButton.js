@@ -8,16 +8,17 @@ const { width: screenWidth, height: screenHeight } = Dimensions.get('window')
 const UseThisToolButton = (props) => {
     const navigation = props.navigation
     const target = props.target
+    const prompt = props.prompt
 
     return (
-        <UseThisToolButtonContainer>
+        <ButtonContainer>
             <TouchableOpacity onPress={() => navigation.navigate(target)}>
                 <UseThisToolText>
                     Use This Tool
                 </UseThisToolText>
                 <DoubleChevronRight style={{ position: "absolute", right: '-25%' }}/>
             </TouchableOpacity>
-        </UseThisToolButtonContainer>
+        </ButtonContainer>
     )
 }
 
@@ -28,7 +29,7 @@ const UseThisToolText = styled.Text`
     font-size: 20px;
 `
 
-const UseThisToolButtonContainer = styled.View`
+const ButtonContainer = styled.View`
     background: #ffea7c;
     width: 300px;
     height: 50px;
