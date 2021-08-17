@@ -16,6 +16,7 @@ import AL1 from './screens/AL/AL1'
 import IAIntro from './screens/IA/IAIntro'
 import IA1 from './screens/IA/IA1'
 import GFIntro from './screens/GF/GFIntro'
+import GF1 from './screens/GF/GF1'
 import JeopardyIntro from './screens/Jeopardy/JeopardyIntro'
 
 
@@ -60,8 +61,8 @@ const App = () => {
           }}
         >
   
-          <Stack.Screen name="Home" component={HomeScreen} />
-          <Stack.Screen name="Cues" component={CuesHome}/>
+          <Stack.Screen name="HomeScreen" component={HomeScreen} />
+          <Stack.Screen name="CuesHome" component={CuesHome}/>
           <Stack.Screen name="RoDIntro" component={RoDIntro} />
           <Stack.Screen name="RoD1" component={RoD1} />
           <Stack.Screen name="ALIntro" component={ALIntro} />
@@ -69,6 +70,7 @@ const App = () => {
           <Stack.Screen name="IAIntro" component={IAIntro} />
           <Stack.Screen name="IA1" component={IA1} />
           <Stack.Screen name="GFIntro" component={GFIntro} />
+          <Stack.Screen name="GF1" component={GF1} />
           <Stack.Screen name="JeopardyIntro" component={JeopardyIntro} />
   
         </Stack.Navigator>

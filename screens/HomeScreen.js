@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import { View, Dimensions, Platform, TouchableOpacity } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
+import UseTheToolsButton from '../components/UseTheToolsButton'
 import { DoubleChevronRight } from '../components/Icons'
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get('window')
@@ -22,16 +22,22 @@ const HomeScreen = ({ navigation }) => {
             <TitleTwo>
                 Tools
             </TitleTwo>
-            <ButtonContainer>
+            <UseTheToolsButton navigation={navigation} />
+            {/* <ButtonContainer>
                 <TouchableOpacity
                     onPress={() => navigation.navigate("Cues")}
+                    style={{flex: 1, zIndex: 1}}
                 >
-                <DoubleChevronRight style={{position: "absolute", left: 175, top: screenHeight/13.533/11 }}/>
+                <DoubleChevronRight 
+                    style={{position: "absolute", left: 175, top: screenHeight/13.533/11 }}
+                />
+
                 <ButtonText>
                     Use The Tools
                 </ButtonText>
+
                 </TouchableOpacity>
-            </ButtonContainer>
+            </ButtonContainer> */}
         </HomeScreenView>
     )
 
@@ -47,21 +53,23 @@ const HomeScreenView = styled.View`
 const ButtonText = styled.Text`
     font-size: 24px;
     font-family: Poppins-SemiBold;
-    padding-right: 20px
+    padding-top: 15px;
 `
+//padding-right: 20px;
 
 const ButtonContainer = styled.View`
     background: #ffea7c;
     width: ${screenWidth/1.6304}px;
-    height: ${screenHeight/13.53333}px;
+    height: 70px;
     left: ${screenWidth/5.137}px;
-    top: ${screenHeight/1.56153}px;
+    top: ${screenHeight/1.6}px;
     border-radius: 50px;
     border: 1.25px solid black;
     justify-content: center;
     align-items: center;
-    z-index: 1
 `
+//    height: ${screenHeight/13.53333}px;
+
 
 const TitleTwo = styled.Text`
     font-size: 72px;

@@ -1,6 +1,6 @@
 import React from 'react'
-import { Dimensions, TouchableOpacity } from 'react-native'
 import styled from 'styled-components'
+import { Dimensions, TouchableOpacity } from 'react-native'
 
 const { width: screenWidth, height: screenHeight } = Dimensions.get('window')
 
@@ -9,11 +9,14 @@ const CueOption = (props) => {
 
     return (
         <Container>
-            <TouchableOpacity onPress={() => {navigation.navigate(props.to)}}>
+            <TouchableOpacity 
+                onPress={() => {navigation.navigate(props.to)}}
+                style={{flex: 1}}
+            >
                 <Text>
                     {props.cue}
                 </Text>
-            </TouchableOpacity>
+            </TouchableOpacity> 
         </Container>
 
     )
