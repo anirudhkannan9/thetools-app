@@ -18,6 +18,7 @@ import IA1 from './screens/IA/IA1'
 import GFIntro from './screens/GF/GFIntro'
 import GF1 from './screens/GF/GF1'
 import JeopardyIntro from './screens/Jeopardy/JeopardyIntro'
+import Jeopardy1 from './screens/Jeopardy/Jeopardy1'
 
 
 //fetch the fonts
@@ -72,6 +73,7 @@ const App = () => {
           <Stack.Screen name="GFIntro" component={GFIntro} />
           <Stack.Screen name="GF1" component={GF1} />
           <Stack.Screen name="JeopardyIntro" component={JeopardyIntro} />
+          <Stack.Screen name="Jeopardy1" component={Jeopardy1} />
   
         </Stack.Navigator>
       </NavigationContainer>

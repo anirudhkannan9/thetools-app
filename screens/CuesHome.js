@@ -60,18 +60,26 @@ const CuesHome = ( props ) => {
 
 export default CuesHome
 
-const TitleBar = styled.View`
-    width: 100%;
-    margin-top: 70px;
-    padding-left: 46.2px;
-    justify-content: center;
-
-`
 
 const Title = styled.Text`
     font-size: 20px;
     font-family: Poppins-Bold
 `
+
+const titleBarWidth = (339/375)*screenWidth
+const titleBarFromLeft = (screenWidth-titleBarWidth)/2
+
+const TitleBar = styled.View`
+    background-color: #ffea7c;
+    width: ${titleBarWidth}px;
+    margin-top: 70px;
+    left: ${titleBarFromLeft}px;
+    justify-content: center;
+    align-items: center
+`
+//width: 100%
+//padding-left: 46.2px
+
 
 const BackButtonText = styled.Text`
     font-size: 19px;

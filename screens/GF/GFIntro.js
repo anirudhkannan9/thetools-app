@@ -61,11 +61,11 @@ const Step3Text = styled.Text`
 `
 
 const Step3Container = styled.View`
-    background-color: white;
+    background-color: #ffea7c;
     width: ${(268/375)*screenWidth}px;
     height: ${(42/812)*screenHeight}px;
     left: ${leftAlignMostElements}px;
-    top: ${(256/812)*screenHeight}px;
+    top: ${(253.5/812)*screenHeight}px;
     align-items: center;
     flex-direction: row;
 `
@@ -77,11 +77,11 @@ const Step2Text = styled.Text`
 `
 
 const Step2Container = styled.View`
-    background-color: white;
+    background-color: #ffea7c;
     width: ${(268/375)*screenWidth}px;
     height: ${(42/812)*screenHeight}px;
     left: ${leftAlignMostElements}px;
-    top: ${(186/812)*screenHeight}px;
+    top: ${(183.5/812)*screenHeight}px;
     align-items: center;
     flex-direction: row;
 `
@@ -93,11 +93,11 @@ const Step1Text = styled.Text`
 `
 
 const Step1Container = styled.View`
-    background-color: white;
+    background-color: #ffea7c;
     width: ${(268/375)*screenWidth}px;
     height: ${(42/812)*screenHeight}px;
     left: ${leftAlignMostElements}px;
-    top: ${(116/812)*screenHeight}px;
+    top: ${(118.5/812)*screenHeight}px;
     align-items: center;
     flex-direction: row;
 `
@@ -108,7 +108,7 @@ const GFText = styled.Text`
 `
 
 const GFContainer = styled.View`
-    background-color: white;
+    background-color: #ffea7c;
     width: ${screenWidth*(286/375)}px;
     height: ${(132/812)*screenHeight}px;
     left: ${leftAlignMostElements}px;
@@ -122,7 +122,7 @@ const MottoText = styled.Text`
 `
 
 const MottoContainer = styled.View`
-    background-color: white;
+    background-color: #ffea7c;
     width: ${screenWidth/(375/330)}px;
     height: ${screenHeight/(812/27)}px;
     left: ${screenWidth*(20/375)}px;

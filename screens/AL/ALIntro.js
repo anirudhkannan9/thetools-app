@@ -97,12 +97,16 @@ const ALText = styled.Text`
     font-size: ${(48/812)*screenHeight}px;
 `
 
+const aLWidth = (286/375*screenWidth)
+const aLFromLeft = (screenWidth-aLWidth)/2
+
 const ALContainer = styled.View`
     background-color: #ffea7c;
-    width: ${(286/375)*screenWidth}px;
+    width: ${aLWidth}px;
     height: ${(61/812)*screenHeight}px;
-    left: ${leftAlignMostElements}px;
+    left: ${aLFromLeft}px;
     top: ${(137/812)*screenHeight}px;
+    align-items: center;
 `
 
 const MottoText = styled.Text`

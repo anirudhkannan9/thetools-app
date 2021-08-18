@@ -106,14 +106,18 @@ const IAText = styled.Text`
     font-size: ${(48/812)*screenHeight}px;
 `
 
+const iAWidth = (286/375)*screenWidth
+const iAFromLeft = (screenWidth-iAWidth)/2
+
 const IAContainer = styled.View`
     background-color: #ffea7c;
-    width: ${screenWidth*(286/375)}px;
+    width: ${iAWidth}px;
     height: ${(132/812)*screenHeight}px;
-    left: ${leftAlignMostElements}px;
+    left: ${iAFromLeft}px;
     top: ${(100/812)*screenHeight}px;
-    flex: 0.25
-`
+    flex: 0.25;
+    align-items: center
+    `
 
 const MottoText = styled.Text`
     font-family: Poppins-SemiBoldItalic;
