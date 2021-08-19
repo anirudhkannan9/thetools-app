@@ -27,7 +27,7 @@ const Jeopardy1 = (props) => {
             </InstructionContainer>
             <NextButton 
                 navigation={navigation}
-                target={"Jeopardy2"}
+                target={"Jeopardy2"} 
             />
         </Container>
     )

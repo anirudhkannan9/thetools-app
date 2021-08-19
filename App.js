@@ -7,21 +7,34 @@ import AppLoading from 'expo-app-loading'
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import HomeScreen from './screens/HomeScreen'
 import CuesHome from './screens/CuesHome'
 import RoDIntro from './screens/RoD/RoDIntro'
 import RoD1 from './screens/RoD/RoD1'
+import RoD2 from './screens/RoD/RoD2'
+import RoD3 from './screens/RoD/RoD3'
 import ALIntro from './screens/AL/ALIntro'
 import AL1 from './screens/AL/AL1'
+import AL2 from './screens/AL/AL2'
+import AL3 from './screens/AL/AL3'
 import IAIntro from './screens/IA/IAIntro'
 import IA1 from './screens/IA/IA1'
+import IA2 from './screens/IA/IA2'
+import IA3 from './screens/IA/IA3'
 import GFIntro from './screens/GF/GFIntro'
 import GF1 from './screens/GF/GF1'
+import GF2 from './screens/GF/GF2'
+import GF3 from './screens/GF/GF3'
 import JeopardyIntro from './screens/Jeopardy/JeopardyIntro'
 import Jeopardy1 from './screens/Jeopardy/Jeopardy1'
 import Jeopardy2 from './screens/Jeopardy/Jeopardy2'
 import Jeopardy3 from './screens/Jeopardy/Jeopardy3'
-
+import ShadowHome from './screens/Shadow/ShadowHome';
+import ShadowDefinition from './screens/Shadow/ShadowDefinition'
+import SeeShadow1 from './screens/Shadow/SeeShadow1'
+import SeeShadow2 from './screens/Shadow/SeeShadow2'
+import SeeShadow3 from './screens/Shadow/SeeShadow3'
 
 //fetch the fonts
 const fetchFont = () => {
@@ -71,16 +84,25 @@ const App = () => {
           <Stack.Screen name="CuesHome" component={CuesHome}/>
           <Stack.Screen name="RoDIntro" component={RoDIntro} />
           <Stack.Screen name="RoD1" component={RoD1} />
+          <Stack.Screen name="RoD2" component={RoD2} />
+          <Stack.Screen name="RoD3" component={RoD3} />
           <Stack.Screen name="ALIntro" component={ALIntro} />
           <Stack.Screen name="AL1" component={AL1} />
+          <Stack.Screen name="AL2" component={AL2} />
+          <Stack.Screen name="AL3" component={AL3} />
           <Stack.Screen name="IAIntro" component={IAIntro} />
           <Stack.Screen name="IA1" component={IA1} />
+          <Stack.Screen name="IA2" component={IA2} />
+          <Stack.Screen name="IA3" component={IA3} />
           <Stack.Screen name="GFIntro" component={GFIntro} />
           <Stack.Screen name="GF1" component={GF1} />
+          <Stack.Screen name="GF2" component={GF2} />
+          <Stack.Screen name="GF3" component={GF3} />
           <Stack.Screen name="JeopardyIntro" component={JeopardyIntro} />
           <Stack.Screen name="Jeopardy1" component={Jeopardy1} />
           <Stack.Screen name="Jeopardy2" component={Jeopardy2} />
           <Stack.Screen name="Jeopardy3" component = { Jeopardy3 } /> 
+          <Stack.Screen name="ShadowHome" component = { ShadowHome } />
   
         </Stack.Navigator>
       </NavigationContainer>

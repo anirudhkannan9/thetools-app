@@ -33,6 +33,7 @@ const touchableStyles = {
     backgroundColor: "#ffea7c",
     width: 300,
     height: 50,
+    position: "absolute",
     left: (screenWidth-300)/2,
     bottom: (0.05*screenHeight),
     borderWidth: 1,
@@ -40,7 +41,6 @@ const touchableStyles = {
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "row",
-    position: "absolute",
 }
 
 const Text = styled.Text`

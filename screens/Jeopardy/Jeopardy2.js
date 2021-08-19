@@ -23,11 +23,11 @@ const Jeopardy2 = ({ navigation }) => {
             </InstructionContainer>
             <NextButton 
                 navigation={ navigation }
-                target={ "Jeopardy3" }
+                target={ "Jeopardy3" } 
             />
         </Container>
     )
-}
+} 
 
 export default Jeopardy2
 
@@ -58,5 +58,4 @@ const Container = styled.View`
     flex: 1;
 `
 
-const Text = styled.Text``
 

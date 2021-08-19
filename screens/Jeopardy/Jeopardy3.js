@@ -21,22 +21,17 @@ const Jeopardy3 = ( { navigation } ) => {
                     use whichever basic Tool you need at that moment. Move into using the Tool.
                 </InstructionText>
             </InstructionContainer>
-            {/* <RedoAndHomeButtons 
-                navigation={ navigation }
-                redoTarget = { "Jeopardy1" }
-                homeTarget = { "CuesHome" }
-            /> */}
             <RedoAndHomeButtonsContainer>
                 <RedoButton
                     navigation = { navigation }
-                    target = { "Jeopardy1" }
+                    target = { "JeopardyIntro" }
                 />
                 <HomeButton 
                     navigation = { navigation }
                     target = { "CuesHome" }
                 />
-            </RedoAndHomeButtonsContainer>
-        </Container>
+            </RedoAndHomeButtonsContainer> 
+        </Container> 
     )
 }
 
@@ -47,8 +42,10 @@ const RedoAndHomeButtonsContainer = styled.View`
     width: 195px;
     height: 65px;;
     left: ${(screenWidth-195)/2}px;
-    top: ${0.53*screenHeight}px;
+    /* top: ${0.53*screenHeight}px; */
     flex-direction: row;
+    position: absolute;
+    bottom: ${(42/812)*screenHeight}px;
 `
 
 const InstructionText = styled.Text`
@@ -78,5 +75,4 @@ const Container = styled.View`
     flex: 1;
 `
 
-const Text = styled.Text``
 
