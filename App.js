@@ -19,6 +19,8 @@ import GFIntro from './screens/GF/GFIntro'
 import GF1 from './screens/GF/GF1'
 import JeopardyIntro from './screens/Jeopardy/JeopardyIntro'
 import Jeopardy1 from './screens/Jeopardy/Jeopardy1'
+import Jeopardy2 from './screens/Jeopardy/Jeopardy2'
+import Jeopardy3 from './screens/Jeopardy/Jeopardy3'
 
 
 //fetch the fonts
@@ -29,7 +31,10 @@ const fetchFont = () => {
     'Poppins-Regular': require('./assets/fonts/Poppins/Poppins-Regular.ttf'),
     'Poppins-Medium': require('./assets/fonts/Poppins/Poppins-Medium.ttf'),
     'Poppins-SemiBoldItalic': require('./assets/fonts/Poppins/Poppins-SemiBoldItalic.ttf'),
-    'Poppins-ExtraBold': require('./assets/fonts/Poppins/Poppins-ExtraBold.ttf')
+    'Poppins-ExtraBold': require('./assets/fonts/Poppins/Poppins-ExtraBold.ttf'),
+    'Poppins-MediumItalic': require('./assets/fonts/Poppins/Poppins-MediumItalic.ttf'),
+    'Poppins-BoldItalic': require('./assets/fonts/Poppins/Poppins-BoldItalic.ttf'),
+    'Poppins-Italic': require('./assets/fonts/Poppins/Poppins-Italic.ttf')
   })
 }
 
@@ -74,6 +79,8 @@ const App = () => {
           <Stack.Screen name="GF1" component={GF1} />
           <Stack.Screen name="JeopardyIntro" component={JeopardyIntro} />
           <Stack.Screen name="Jeopardy1" component={Jeopardy1} />
+          <Stack.Screen name="Jeopardy2" component={Jeopardy2} />
+          <Stack.Screen name="Jeopardy3" component = { Jeopardy3 } /> 
   
         </Stack.Navigator>
       </NavigationContainer>
