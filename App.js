@@ -47,7 +47,8 @@ const fetchFont = () => {
     'Poppins-ExtraBold': require('./assets/fonts/Poppins/Poppins-ExtraBold.ttf'),
     'Poppins-MediumItalic': require('./assets/fonts/Poppins/Poppins-MediumItalic.ttf'),
     'Poppins-BoldItalic': require('./assets/fonts/Poppins/Poppins-BoldItalic.ttf'),
-    'Poppins-Italic': require('./assets/fonts/Poppins/Poppins-Italic.ttf')
+    'Poppins-Italic': require('./assets/fonts/Poppins/Poppins-Italic.ttf'),
+    'Poppins-ExtraBoldItalic': require('./assets/fonts/Poppins/Poppins-ExtraBoldItalic.ttf')
   })
 }
 
@@ -103,6 +104,10 @@ const App = () => {
           <Stack.Screen name="Jeopardy2" component={Jeopardy2} />
           <Stack.Screen name="Jeopardy3" component = { Jeopardy3 } /> 
           <Stack.Screen name="ShadowHome" component = { ShadowHome } />
+          <Stack.Screen name="ShadowDefinition" component = { ShadowDefinition } />
+          <Stack.Screen name="SeeShadow1" component = { SeeShadow1 } />
+          <Stack.Screen name = "SeeShadow2" component = { SeeShadow2 } />
+          <Stack.Screen name = " SeeShadow3 " component = { SeeShadow3 } />
   
         </Stack.Navigator>
       </NavigationContainer>

@@ -49,7 +49,7 @@ const RoDIntro = (props) => {
             <Step3Container>
                 <SmallEncircledThree />
                 <Step3Text>
-                    "Fear* sets me free..."
+                    "Fear* sets me free!"
 
                 </Step3Text>
 
