@@ -106,8 +106,8 @@ const App = () => {
           <Stack.Screen name="ShadowHome" component = { ShadowHome } />
           <Stack.Screen name="ShadowDefinition" component = { ShadowDefinition } />
           <Stack.Screen name="SeeShadow1" component = { SeeShadow1 } />
-          <Stack.Screen name = "SeeShadow2" component = { SeeShadow2 } />
-          <Stack.Screen name = " SeeShadow3 " component = { SeeShadow3 } />
+          <Stack.Screen name="SeeShadow2" component = { SeeShadow2 } />
+          <Stack.Screen name="SeeShadow3" component = { SeeShadow3 } />
   
         </Stack.Navigator>
       </NavigationContainer>
@@ -115,8 +115,3 @@ const App = () => {
 }
 
 export default App
-
-const Container = styled.View`
-  flex: 1;
-  background-color: #ffea7c;
-`

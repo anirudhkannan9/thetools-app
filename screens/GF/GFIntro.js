@@ -26,7 +26,7 @@ const GFIntro = (props) => {
             <Step1Container>
                 <SmallEncircledOne />
                 <Step1Text>
-                    Gratitude
+                    Gratefulness
                 </Step1Text>
             </Step1Container>
             <Step2Container>
@@ -134,6 +134,4 @@ const Container = styled.View`
     background-color: #ffea7c;
     flex: 1;
 `
-
-const Text = styled.Text``
 

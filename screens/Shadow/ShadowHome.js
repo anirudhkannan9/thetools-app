@@ -40,63 +40,11 @@ const ShadowHome = ({ navigation }) => {
 
 
             </TouchableOpacity>
-            {/* <WhatIsMyShadowContainer>
-                <LargeEncircledQuestionMark />
-                <TouchableOpacity
-                    onPress = { () => navigation.navigate("ShadowDefinition") }
-                    style={ touchableWhatStyles }
-                >
-                    <WhatIsMyShadowText>
-                        What is my "Shadow"?
-                    </WhatIsMyShadowText>
-                </TouchableOpacity>
-            </WhatIsMyShadowContainer> */}
-            {/* <HelpMeSeeMyShadowContainer>
-                <LargeEncircledEye />
-                <TouchableOpacity 
-                    onPress = { () => navigation.navigate("SeeShadow1") }
-                    style = { touchableHelpStyles }
-                >
-                    <HelpMeSeeMyShadowText>
-                        Help me see my Shadow
-                    </HelpMeSeeMyShadowText>
-
-                </TouchableOpacity>
-            </HelpMeSeeMyShadowContainer> */}
-
-
-
-
         </Container>
     )
 }
 
 export default ShadowHome
-
-// const HelpMeSeeMyShadowText = styled.Text`
-//     font-family: 'Poppins-Bold';
-//     font-size: 19px;
-//     text-decoration: underline;
-// `
-
-// const touchableHelpStyles = {
-//     backgroundColor: '#ffea7c',
-//     width: 240,
-//     height: 60,
-//     left: 14,
-//     justifyContent: 'center'
-// }
-
-// const HelpMeSeeMyShadowContainer = styled.View`
-//     background-color: #ffea7c;
-//     width: 315px;
-//     height: 65px;
-//     position: absolute;
-//     left: ${(screenWidth-303)/2}px;
-//     top: ${(519/812)*screenHeight}px;
-//     flex-direction: row;
-//     align-items: center
-// `
 
 const HelpMeSeeMyShadowText = styled.Text`
     font-family: 'Poppins-Bold';
@@ -131,36 +79,6 @@ const touchableWhatStyles = {
     flexDirection: 'row',
     alignItems: 'center',
 }
-
-/* 
-const WhatIsMyShadowText = styled.Text`
-    font-family: 'Poppins-Bold';
-    font-size: 19px;
-    text-decoration: underline;
-`
-
-const touchableWhatStyles = {
-    backgroundColor: 'green',
-    width: 220,
-    height: 60,
-    left: 15,
-    justifyContent: 'center',
-
-} */
-
-// const whatIsMyShadowContainerWidth = (303/375)*screenWidth
-// const whatIsMyShadowContainerFromLeft = (screenWidth-whatIsMyShadowContainerWidth)/2
-
-const WhatIsMyShadowContainer = styled.View`
-    background-color: white;
-    width: 303px;
-    height: 65px;
-    position: absolute;
-    left: ${(screenWidth-303)/2}px;
-    top: ${(391/812)*screenHeight}px;
-    flex-direction: row;
-    align-items: center
-`
 
 const LargeEncircledMaskContainer = styled.View`
     background-color: #ffea7c;

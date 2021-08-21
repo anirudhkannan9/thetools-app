@@ -17,7 +17,7 @@ const AL2 = ({ navigation }) => {
             <InstructionContainer>
                 <InstructionText>
                     <InstructionText style={{ fontFamily: 'Poppins-BoldItalic'}}>Transmission: </InstructionText>
-                    Send all the love from your chest to the other person, holding nothing back.
+                    Picture the person causing you angst. Send all the love from your chest to the other person, holding nothing back.
                 </InstructionText>
             </InstructionContainer>
             <NextButton 

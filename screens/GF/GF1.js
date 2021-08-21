@@ -16,9 +16,9 @@ const GF1 = ({ navigation }) => {
             </LargeEncircledOneContainer>
             <InstructionContainer>
                 <InstructionText>
-                    Silently name specific things you're grateful for. Go slowly, feeling 
-                    the <InstructionText style={{ fontFamily: 'Poppins-BoldItalic'}}>gratitude</InstructionText> for 
-                    each item. Don't name the same item repeatedly - feel 
+                    Silently name specific things you're grateful for. Go 
+                    slowly, <InstructionText style={{ fontFamily: 'Poppins-BoldItalic'}}>feeling</InstructionText> the
+                    gratitude for each item. Don't name the same item repeatedly - feel 
                     the <InstructionText style={{ fontFamily: 'Poppins-BoldItalic'}}>strain</InstructionText> of
                     coming up with new ones.  
 
@@ -55,7 +55,6 @@ const LargeEncircledOneContainer = styled.View`
     height: 66px;
     top: ${(65/812)*screenHeight}px;
     left: ${(screenWidth-61)/2}px;
-
 `
 
 const Container = styled.View`

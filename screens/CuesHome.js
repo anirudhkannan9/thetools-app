@@ -7,9 +7,6 @@ import CueOption from '../components/CueOption'
 const { width: screenWidth, height: screenHeight } = Dimensions.get('window')
 
 const CuesHome = ( props ) => {
-    console.log('width: ', screenWidth)
-    console.log('height: ', screenHeight)
-
     const navigation = props.navigation
 
     return (

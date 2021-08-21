@@ -24,7 +24,7 @@ const RoD1 = ({ navigation }) => {
             <NextButton 
                 navigation =  { navigation } 
                 target = { "RoD2" }
-                />
+            />
 
         </Container>
     ) 

@@ -25,7 +25,7 @@ const JeopardyIntro = (props) => {
             <Step1Container>
                 <SmallEncircledOne />
                 <Step1Text>
-                    Deathbead
+                    Deathbed
                 </Step1Text>
             </Step1Container>
             <Step2Container>
