@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "thetools-app",
+    "name": "The Tools",
     "slug": "thetools-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -17,13 +17,17 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.anirudhkannan.thetools-app"
     },
     "android": {
+      "package": "com.anirudhkannan.thetoolsapp",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "permissions": [],
+      "versionCode": 2
     },
     "web": {
       "favicon": "./assets/favicon.png"
